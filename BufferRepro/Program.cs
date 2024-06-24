@@ -7,7 +7,7 @@ namespace BufferRepro
 {
     internal class Program
     {
-        static void Main(string path)
+        static void Main(string path, bool useBadVersion)
         {
             if (path == null)
             {
@@ -20,8 +20,7 @@ namespace BufferRepro
 
                 if (Path.GetExtension(path).ToLower() == ".xml")
                 {
-                    TestKey(fileContent, false);
-                    TestKey(fileContent, true);
+                    TestKey(fileContent, useBadVersion);
                 }
             }
             else
