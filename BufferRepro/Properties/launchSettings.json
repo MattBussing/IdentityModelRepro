@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BufferRepro": {
+      "commandName": "Project",
+      "commandLineArgs": "--path ../key.xml"
+    }
+  }
+}
